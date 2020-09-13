@@ -18,29 +18,29 @@ let clicks = obj.button.onclick = function () {
             // obj.text.innerHTML = 'Ваше имя: ';
 
             for (var j = 0; j < obj.list.length; j++) {
-                if (obj.name == obj.list[j].toUpperCase() || obj.name == 'александр'.toUpperCase() || obj.name == 'державин'.toUpperCase()) {
+                if (obj.name == obj.list[0].toUpperCase() || obj.name == 'александр'.toUpperCase() || obj.name == 'державин'.toUpperCase()) {
                     obj.span.innerHTML = obj.list[0].toUpperCase();
                     obj.image.src = 'img/Dergavin.jpg';
                     obj.image.style.display = 'flex';
                     return false;
-                } else if (obj.name == obj.list[j].toUpperCase() || obj.name == 'максим'.toUpperCase() || obj.name == 'петров'.toUpperCase()) {
+                } else if (obj.name == obj.list[1].toUpperCase() || obj.name == 'максим'.toUpperCase() || obj.name == 'петров'.toUpperCase()) {
                     obj.span.innerHTML = obj.list[1].toUpperCase();
                     obj.image.src = 'img/maxim.jpg';
                     obj.image.style.display = 'flex';
                     return false;
-                } else if (obj.name == obj.list[j].toUpperCase() || obj.name == 'софья'.toUpperCase() || obj.name == 'буханец'.toUpperCase()) {
+                } else if (obj.name == obj.list[2].toUpperCase() || obj.name == 'софья'.toUpperCase() || obj.name == 'буханец'.toUpperCase()) {
                     obj.span.innerHTML = obj.list[2].toUpperCase();
                     obj.image.src = 'img/Sofia.jpg';
                     obj.image.style.display = 'flex';
                     return false;
-                } else if (obj.name == obj.list[j].toUpperCase() || obj.name == 'артур'.toUpperCase() || obj.name == 'диоданд'.toUpperCase()) {
+                } else if (obj.name == obj.list[3].toUpperCase() || obj.name == 'артур'.toUpperCase() || obj.name == 'диоданд'.toUpperCase()) {
                     obj.span.innerHTML = obj.list[3].toUpperCase();
                     obj.image.src = 'img/Artur.jpg';
                     obj.image.style.display = 'flex';
                     return false;
                 } else {
                     alert('Данного имени нет у нас в данных, введите другое имя.');
-                    return false;
+                    // return false;
                 }
             }
 
