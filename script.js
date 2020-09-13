@@ -40,7 +40,7 @@ let clicks = obj.button.onclick = function () {
                     return false;
                 } else {
                     alert('Данного имени нет у нас в данных, введите другое имя.');
-                    // return false;
+                    return false;
                 }
             }
 
